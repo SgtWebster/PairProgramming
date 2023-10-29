@@ -23,4 +23,4 @@ def multiple(x):  # x bedeutet Zahlen von 1 bis x
         print(result)
     return result
 
-print(multiple(10))
+print(multiple(20))
