@@ -29,6 +29,7 @@ def triangle_path(n): #anzahl der Ebenen -> im Beispiel sind es 15 ebenen
     x, y = 0, 0    #x und y Koordinaten (x = Index der Zahl in der Liste, y = Ebene der Pyramide (0 = Spitze, 14 = Boden))
     result = triangle[y][x]
     for i in range(0, n-1):
+        print("row", i, "index", x)
         if triangle[i+1][x] >= triangle[i+1][x+1]:
             result = result + triangle[i+1][x]
         else:
